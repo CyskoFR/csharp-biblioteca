@@ -18,11 +18,12 @@
 
 using System.ComponentModel;
 
-User user = new User();
-user.Name = "Francesco";
-user.Surname = "Ricchiuti";
-user.Email = "francesco@email.com";
-user.Password = "12345678";
-user.MobileNumber = 3450000000;
+Library library = new Library();
+
+User user = new User("Francesco", "Ricchiuti", "francesco@email.com", "12345678", 3450000000);
+
 Console.WriteLine($"{user.Name} {user.Surname}, {user.Email}, {user.Password}, {user.MobileNumber}");
+
+
+library.AddUser(user);
 
