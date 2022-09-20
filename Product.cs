@@ -16,13 +16,13 @@
 //L’utente deve poter eseguire delle ricerche per codice o per titolo e, eventualmente, effettuare dei prestiti registrando il periodo (Dal/Al) del prestito e il documento.
 //Deve essere possibile effettuare la ricerca dei prestiti dato nome e cognome di un utente.
 
-using System.ComponentModel;
-
-User user = new User();
-user.Name = "Francesco";
-user.Surname = "Ricchiuti";
-user.Email = "francesco@email.com";
-user.Password = "12345678";
-user.MobileNumber = 3450000000;
-Console.WriteLine($"{user.Name} {user.Surname}, {user.Email}, {user.Password}, {user.MobileNumber}");
+public class Product
+{
+    public string Title { get; set; }
+    public int Year { get; set; }
+    public string Category { get; set; }
+    public bool IsAvailable { get; set; }
+    public string Place { get; set; }
+    public string Author { get; set; }
+}
 
