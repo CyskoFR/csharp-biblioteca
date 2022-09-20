@@ -21,9 +21,7 @@ using System.ComponentModel;
 Library library = new Library();
 
 User user = new User("Francesco", "Ricchiuti", "francesco@email.com", "12345678", 3450000000);
-
 Console.WriteLine($"{user.Name} {user.Surname}, {user.Email}, {user.Password}, {user.MobileNumber}");
 
 
 library.AddUser(user);
-
